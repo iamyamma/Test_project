@@ -5,6 +5,7 @@ class BasePageLocators:
     LOGIN_LINK = (By.ID, "login_link")
     LOGIN_LINK_INVALID = (By.ID, "login_link_invalid")
     BASKET_LINK = (By.CSS_SELECTOR, '.basket-mini a.btn')
+    USER_ICON = (By.CSS_SELECTOR, ".icon-user")
 
 
 class BasketPageLocators:
@@ -24,7 +25,7 @@ class LoginPageLocators:
 
 class ProductPageLocators:
     PRODUCT = (By.TAG_NAME, "h1")
-    PRICE_PRODUCT = (By.CLASS_NAME, "price_color")
+    PRICE = (By.CLASS_NAME, "price_color")
     PRODUCT_TO_BASKET = (By.CLASS_NAME, "btn-add-to-basket")
     MESSAGE_PRODUCT = (By.CSS_SELECTOR, "#messages .alert:first-child strong")
     MESSAGE_PRICE = (By.CSS_SELECTOR, "#messages .alert:last-child strong")
